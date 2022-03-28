@@ -117,3 +117,12 @@ ul {
     font-weight: 900;
     transform: rotate(180deg);
 }
+
+/* Distortion */
+.distortion {
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+}

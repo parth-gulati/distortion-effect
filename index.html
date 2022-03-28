@@ -77,6 +77,16 @@
     ></script>
     <!-- hover-effect js -->
     <script src="./hover-effect.umd.js"></script>
+    <script>
+      new hoverEffect({
+        parent: document.querySelector(".distortion"),
+        intensity: 0.2,
+        image1: "./images/01.png",
+        image2: "./images/02.png",
+        displacementImage: "./images/diss.png",
+        imagesRatio: 380 / 300,
+      });
+    </script>
 
     <script
       type="module"
