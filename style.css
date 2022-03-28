@@ -9,8 +9,8 @@ body {
   background-color: #d8d8e2;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
-
 
 /* Navbar */
 
@@ -69,10 +69,18 @@ ul {
   font-size: 120px;
   font-weight: 900;
   letter-spacing: -10px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  margin-bottom: 20px;
+  width: 600px;
 }
 
-.text h1::after {
-  content: "duality";
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text h2 {
   position: absolute;
   top: 40px;
   left: -80px;
@@ -80,6 +88,7 @@ ul {
   z-index: -1;
   font-size: 150px;
   letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 .text h3 {
@@ -87,6 +96,14 @@ ul {
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1;
+
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+
+.text h3 .hidetext {
+  position: absolute;
 }
 
 .text p {
@@ -94,35 +111,61 @@ ul {
   font-size: 12px;
   margin-top: 30px;
   font-weight: 500;
+
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+
+.text p .hidetext {
+  position: absolute;
 }
 
 /* Sponsor */
 
 .sponsor {
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
-    text-align: center;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
 }
 
 .sponsor img {
-    width: 200px;
-    transform: rotate(-90deg);
-  }
+  width: 200px;
+  transform: rotate(-90deg);
+}
 
 .sponsor p {
-    margin-top: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 900;
-    transform: rotate(180deg);
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(180deg);
 }
 
 /* Distortion */
 .distortion {
-    width: 500px;
-    height: 720px;
-    position: absolute;
-    right: 300px;
-    bottom: 0;
+  width: 500px;
+  height: 720px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  background-color: #efde74;
+}
+.second {
+  background-color: #efde74;
+  left: 33.3%;
+}
+.third {
+  background-color: #efde74;
+  left: 66.6%;
 }
